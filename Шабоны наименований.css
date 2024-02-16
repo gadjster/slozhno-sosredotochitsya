@@ -1,0 +1,102 @@
+:root {
+  --bg-color: #f5f5f5;
+  --text-color: #312a4e;
+  --accent-color: #ffab6b;
+  --main-font: "Raleway";
+  --accent-font: "STIX Two Text";
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.page {
+}
+
+p,
+h1,
+h2,
+h3,
+blockquote,
+ul,
+ol,
+li,
+figure {
+  margin: 0;
+}
+.content-section {
+}
+.footer {
+}
+.heading {
+}
+.header__title {
+}
+.content__title {
+}
+
+.content__text-block {
+}
+
+.content__text-block .content__paragraph:not(:last-of-type) {
+}
+
+.links {
+}
+
+.content__blockquote {
+}
+
+.content__list {
+}
+
+.content__list::before {
+}
+
+.content__list:last-of-type {
+}
+
+.content__text-block_type_first-lettered
+  .content__paragraph:first-of-type:first-letter {
+}
+
+.content__figure {
+}
+
+.content__picture {
+}
+
+.content__picture-caption {
+}
+
+.content__card {
+}
+
+.content__card-title {
+}
+
+.content__card-subtitle {
+}
+
+.colored-text {
+}
+
+.colored-text::after {
+}
+
+.header__menu {
+}
+
+.header__theme-toggler {
+}
+
+.header__theme-button {
+}
+
+.header__theme-button_is-active {
+}
+
+.footer__copyright {
+}
