@@ -16,7 +16,7 @@
   gap: 10px;
   min-width: 230px;
   min-height: 26px;
-  margin-top: 20px;
+  margin-block-start: 20px;
 }
 
 .header__theme-menu-button {
@@ -44,13 +44,13 @@
 }
 
 .header__title {
-  margin-top: 200px;
+  margin-block-start: 200px;
 }
 
 .header__text {
   display: block;
-  margin-top: 85px;
-  margin-left: 493px;
+  margin-block-start: 85px;
+  margin-inline-start: 493px;
   color: var(--h3font-color, #000028);
   font-family: var(--mainfont, sans-serif);
   font-weight: 700;
