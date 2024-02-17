@@ -4,6 +4,11 @@
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 
+.header {
+  min-height: 768px;
+  background-color: url(../images/cover-image-dark.png);
+}
+
 .header__theme-menu-list {
   display: flex;
   flex-direction: row;
@@ -11,17 +16,110 @@
   gap: 10px;
   min-width: 230px;
   min-height: 26px;
+  margin-top: 20px;
 }
 
 .header__theme-menu-button {
-  background-color: transparent;
+  border: 1px solid var(--accent-color, #ff0070);
   border-bottom: none;
-  outline: 1px solid var(--accent-color, #ff0070);
   color: var(--accent-color, #ff0070);
+  font-family: var(--mainfont, sans-serif);
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 18px;
   text-align: center;
-  font-family: var(--mainfont);
+  text-transform: lowercase;
+  background-color: transparent;
+}
+
+.title {
+  color: var(--h1font-colore, #db00ff);
+  font-family: var(--mainfont, sans-serif);
+  font-weight: 700;
+  font-size: 157px;
+  font-style: normal;
+  line-height: 82.5%; /* 129.525px */
+  text-shadow: 4px 4px 0px #ff0070;
+}
+
+.header__title {
+  margin-top: 200px;
+}
+
+.header__text {
+  display: block;
+  margin-top: 85px;
+  margin-left: 493px;
+  color: var(--h3font-color, #000028);
+  font-family: var(--mainfont, sans-serif);
+  font-weight: 700;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 23.4px; /* 130% */
+  background-color: var(--accent-color, #ff0070);
+}
+
+.card {
+  display: flex;
+  gap: 20px;
+  margin-inline-start: 20px;
+  margin-inline-end: 20px;
+  margin-block-start: 20px;
+  margin-block-end: 20px;
+}
+
+.card-vert {
+  flex-direction: row;
+}
+.card-horz {
+  flex-direction: column;
+}
+
+.title__2 {
+  color: var(--accent-color, #ff0070);
+  font-family: var(--mainfont, sans-serif);
+  font-weight: 700;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 23.4px; /* 130% */
+}
+
+.title__3 {
+  color: var(--h3font-color, #000028);
+  font-family: var(--mainfont, sans-serif);
+  font-weight: 700;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 23.4px; /* 130% */
+  background-color: var(--accent-color, #ff0070);
+}
+
+.title__4 {
+  color: var(--h3font-color, #000028);
+  font-family: var(--mainfont, sans-serif);
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 18px;
+  line-height: 23.4px; /* 130% */
+  background-color: var(--accent-color, #ff0070);
+}
+
+.title__4:first-child {
+  margin-block-start: 20px;
+}
+
+.text__block {
+  margin-block-start: 10px;
+  margin-block-end: 10px;
+  color: var(--mainfont-color, #f1b2ce);
+  font-family: var(--mainfont, sans-serif);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23.4px; /* 130% */
+}
+
+.footer__title {
+  text-align: center;
 }
