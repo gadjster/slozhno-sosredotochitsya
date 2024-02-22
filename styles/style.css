@@ -3,14 +3,14 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background-image: url(../images/cover-image-dark.png);
-  background-attachment: fixed;
   background-position: center;
+  background-attachment: fixed;
 }
 
 .header {
+  position: relative;
   display: grid;
   min-height: 768px;
-  position: relative;
 }
 
 .header__theme-menu {
@@ -27,42 +27,80 @@
 }
 
 .header__theme-menu-button {
+  display: flex;
   height: 26px;
-  border: 1px solid var(--accent-color, #ff0070);
   color: var(--accent-color, #ff0070);
   font-family: var(--mainfont, sans-serif);
+  border: none;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
   line-height: 18px;
-  vertical-align: middle;
   text-transform: lowercase;
   background-color: transparent;
+  outline: none;
 }
 
-.decor__element {
+.header__theme-menu-button:hover {
+  border: 1px solid var(--accent-color, #ff0070);
+}
+
+.header__theme-menu-button:focus {
+  border-bottom: 1px solid var(--accent-color, #ff0070);
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--accent-color, #ff0070);
+}
+
+) .decor__element {
   position: absolute;
   top: 20px;
-  left: 567px;
+  right: 88px;
   color: var(--accent-color, #ff0070);
-  text-align: center;
   font-family: var(--mainfont, sans-serif);
+  font-weight: 400;
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
   line-height: 25px;
+  text-align: center;
   text-transform: uppercase;
+}
+
+.decor__element::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: -20px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 9px var(--accent-color, #ff0070);
+  background-color: var(--accent-color, #ff0070);
 }
 
 /* todo: круг после REC, 
 позиционирование элемента
 */
-.decor__element:after {
-  background-color: var(--accent-color, #ff0070);
-  border-radius: 50%;
-  height: 5em;
-  width: 5em;
+.decorated-zone:after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 59px;
+  width: 25px;
+  height: 25px;
   border-top: 1px solid var(--accent-color, #ff0070);
+  border-right: 1px solid var(--accent-color, #ff0070);
+}
+
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  bottom: 20px;
+  left: 59px;
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid var(--accent-color, #ff0070);
   border-left: 1px solid var(--accent-color, #ff0070);
 }
 
@@ -97,6 +135,8 @@
 }
 
 .section {
+  display: flex;
+  flex-direction: column;
   margin-inline-start: 20px;
   margin-inline-end: 20px;
 }
@@ -106,9 +146,9 @@
 }
 
 .image-block {
-  object-fit: cover;
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .container--1 {
@@ -146,13 +186,13 @@
 }
 
 .title {
+  margin-block-end: 20px;
   color: var(--accent-color, #ff0070);
   font-family: var(--mainfont, sans-serif);
   font-weight: 700;
   font-size: 18px;
   font-style: normal;
   line-height: 23.4px; /* 130% */
-  margin-block-end: 20px;
 }
 
 .text__block {
@@ -177,37 +217,22 @@
 }
 
 .block--1 {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 1;
+  grid-column-start: span 2;
 }
 
 .block--2 {
-  grid-column-start: 1;
-  grid-column-end: 1;
-  grid-row-start: 2;
-  grid-row-end: 4;
-}
-.block--3 {
-  grid-column-start: 2;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 2;
+  grid-row-start: span 2;
 }
 
+.block--3 {
+  grid-row-start: span 2;
+}
 .block--4 {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 3;
+  grid-column-start: span 1;
 }
 
 .block--5 {
-  grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row-start: 3;
-  grid-row-end: 4;
+  grid-column-start: span 2;
 }
 
 .text-hadow {
