@@ -8,7 +8,6 @@
 }
 
 .header {
-  position: relative;
   display: grid;
   min-height: 768px;
 }
@@ -29,16 +28,16 @@
 .header__theme-menu-button {
   display: flex;
   height: 26px;
+  border: 1px solid transparent;
+  outline: none;
   color: var(--accent-color, #ff0070);
   font-family: var(--mainfont, sans-serif);
-  border: none;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
   line-height: 18px;
   text-transform: lowercase;
   background-color: transparent;
-  outline: none;
 }
 
 .header__theme-menu-button:hover {
@@ -53,10 +52,11 @@
   border: 1px solid var(--accent-color, #ff0070);
 }
 
-) .decor__element {
+.decor__element {
   position: absolute;
   top: 20px;
   right: 88px;
+  display: flex;
   color: var(--accent-color, #ff0070);
   font-family: var(--mainfont, sans-serif);
   font-weight: 400;
@@ -69,11 +69,11 @@
 
 .decor__element::after {
   content: "";
-  position: absolute;
-  top: 8px;
-  right: -20px;
+  display: block;
   width: 9px;
   height: 9px;
+  margin-top: 8px;
+  margin-left: 7px;
   border-radius: 50%;
   box-shadow: 0px 0px 9px var(--accent-color, #ff0070);
   background-color: var(--accent-color, #ff0070);
@@ -86,7 +86,7 @@
   content: "";
   position: absolute;
   top: 20px;
-  right: 59px;
+  right: 20px;
   width: 25px;
   height: 25px;
   border-top: 1px solid var(--accent-color, #ff0070);
@@ -97,9 +97,11 @@
   content: "";
   position: absolute;
   bottom: 20px;
-  left: 59px;
+  left: 20px;
   width: 25px;
   height: 25px;
+  margin-top: 8px;
+  margin-left: 7px;
   border-bottom: 1px solid var(--accent-color, #ff0070);
   border-left: 1px solid var(--accent-color, #ff0070);
 }
@@ -246,6 +248,10 @@
 .text-hadow:focus {
   border: 1px solid currentColor;
   outline: none;
+}
+
+.footer {
+  position: relative;
 }
 
 .footer__title {
