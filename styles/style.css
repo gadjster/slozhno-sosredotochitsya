@@ -259,12 +259,17 @@
 .text-hadow {
   text-decoration: none;
   text-shadow: 2px 2px 0px var(--accent-color, #ff0070);
+  border: 1px solid transparent;
 }
 .text-hadow:hover {
   text-decoration: underline;
 }
 
 .text-hadow:focus {
+  outline: none;
+}
+
+.text-hadow:focus-visible {
   border: 1px solid currentColor;
   outline: none;
 }

@@ -18,6 +18,14 @@
     --h1font-colore: #ffc2e6;
     --h3font-color: #353430;
   }
+
+  .page {
+    background-image: url(../images/cover-image-light.png);
+  }
+
+  .decor__element {
+    display: none;
+  }
 }
 
 .page.theme_light {
@@ -25,4 +33,10 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+
+  background-image: url(../images/cover-image-light.png);
+
+  .decor__element {
+    display: none;
+  }
 }
