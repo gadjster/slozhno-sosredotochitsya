@@ -1,14 +1,18 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
+  width: 1024px;
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background-image: url(../images/cover-image-dark.png);
   background-position: center;
+  background-size: contain;
   background-attachment: fixed;
 }
 
 .header {
+  position: relative;
   display: grid;
+  max-width: 1024px;
   min-height: 768px;
 }
 
@@ -22,11 +26,17 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 10px;
+  gap: 9px;
+}
+
+.header__theme-menu-item {
+  width: 70px;
 }
 
 .header__theme-menu-button {
   display: flex;
+  justify-content: center;
+  width: 100%;
   height: 26px;
   border: 1px solid transparent;
   outline: none;
@@ -44,7 +54,7 @@
   border: 1px solid var(--accent-color, #ff0070);
 }
 
-.header__theme-menu-button:focus {
+.header__theme-menu-button:focus-visible {
   border-bottom: 1px solid var(--accent-color, #ff0070);
 }
 
@@ -55,7 +65,7 @@
 .decor__element {
   position: absolute;
   top: 20px;
-  right: 88px;
+  right: 29px;
   display: flex;
   color: var(--accent-color, #ff0070);
   font-family: var(--mainfont, sans-serif);
@@ -69,19 +79,15 @@
 
 .decor__element::after {
   content: "";
-  display: block;
   width: 9px;
   height: 9px;
   margin-top: 8px;
-  margin-left: 7px;
+  margin-left: 10px;
   border-radius: 50%;
   box-shadow: 0px 0px 9px var(--accent-color, #ff0070);
   background-color: var(--accent-color, #ff0070);
 }
 
-/* todo: круг после REC, 
-позиционирование элемента
-*/
 .decorated-zone:after {
   content: "";
   position: absolute;
@@ -100,8 +106,8 @@
   left: 20px;
   width: 25px;
   height: 25px;
-  margin-top: 8px;
-  margin-left: 7px;
+  margin-top: 0;
+  margin-left: 0;
   border-bottom: 1px solid var(--accent-color, #ff0070);
   border-left: 1px solid var(--accent-color, #ff0070);
 }
@@ -116,16 +122,18 @@
 }
 
 .header__title {
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   justify-self: flex-start;
   align-self: center;
-  margin-block-start: 10px;
-  margin-block-end: 10px;
+  margin-block-start: 71px;
+  margin-block-end: 46px;
   text-shadow: 4px 4px 0px var(--accent-color, #ff0070);
 }
 
 .header__text-block {
   justify-self: flex-end;
   max-width: 491px;
+  margin-inline-end: 21px;
 }
 
 .header__text {
@@ -141,10 +149,8 @@
   flex-direction: column;
   margin-inline-start: 20px;
   margin-inline-end: 20px;
-}
-
-.container {
-  display: grid;
+  margin-block-start: 60px;
+  margin-block-end: 60px;
 }
 
 .image-block {
@@ -153,8 +159,12 @@
   object-fit: cover;
 }
 
+.container {
+  display: grid;
+}
+
 .container--1 {
-  grid-template-columns: minmax(236px, 315px) minmax(272px, 649px);
+  grid-template-columns: minmax(250px, 335px) minmax(272px, 649px);
 }
 
 .container--2 {
@@ -166,13 +176,14 @@
 }
 
 .container--img {
+  margin-block-start: 9px;
   grid-template-columns: minmax(230px, 315px) minmax(230px, 315px) minmax(
       230px,
       315px
     );
-  grid-template-rows: minmax(230px, 315px) minmax(230px, 315px) minmax(
+  grid-template-rows: minmax(250px, 260px) minmax(230px, 315px) minmax(
       230px,
-      315px
+      428px
     );
   gap: 20px;
 }
@@ -180,15 +191,18 @@
 .card__row-title {
   grid-column-start: 1;
   grid-column-end: 4;
+  max-width: 335px;
 }
 
-.card-vert {
+.card-vert-title {
   grid-row-start: 1;
-  grid-row-end: 3;
+  grid-row-end: 7;
+}
+
+.card-vert-block {
 }
 
 .title {
-  margin-block-end: 20px;
   color: var(--accent-color, #ff0070);
   font-family: var(--mainfont, sans-serif);
   font-weight: 700;
@@ -210,6 +224,11 @@
 .title-decor {
   color: var(--h3font-color, #000028);
   background-color: var(--accent-color, #ff0070);
+  margin-block-end: 10px;
+}
+
+.mini-block .title {
+  margin-block-end: 20px;
 }
 
 .block {
@@ -252,10 +271,15 @@
 
 .footer {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1024px;
+  height: 768px;
 }
 
 .footer__title {
-  margin-block-start: 300px;
+  margin-block-start: 312px;
   margin-block-end: 300px;
   text-align: center;
   text-shadow: 2px 2px 0px var(--accent-color, #ff0070);

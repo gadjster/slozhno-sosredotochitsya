@@ -4,12 +4,5 @@
 */
 
 :root {
-  --accent-color: #ff0070;
-  --mainfont-color: #f1b2ce;
-  --h1font-colore: #db00ff;
-  --h3font-color: #000028;
   --mainfont: "IBM Plex mono";
-}
-
-.header {
 }
