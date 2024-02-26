@@ -7,8 +7,57 @@
   --mainfont: "IBM Plex mono";
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 768px) {
+@media screen and (min-device-width: 375px) and (max-device-width: 768px) {
   .header__title {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .header__theme-menu-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header__theme-menu {
+    justify-self: flex-end;
+    align-self: self-end;
+    margin-block-start: 20px;
+  }
+
+  .header__text-block {
+    max-width: 364px;
+    margin-inline-end: 21px;
+  }
+
+  .card__row-title {
+    max-width: 230px;
+  }
+
+  .container--2 {
+    grid-row-start: span 1;
+  }
+}
+
+@media (max-width: 375px) {
+  .header__title {
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  }
+}
+
+@media (max-width: 375px) {
+  .header__theme-menu-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header__theme-menu {
+    justify-self: flex-end;
+    align-self: self-end;
+    margin-block-start: 20px;
+  }
+
+  .header__text-block {
+    max-width: 100%;
   }
 }
