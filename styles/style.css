@@ -1,7 +1,7 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  width: 1024px;
+  width: 100vw;
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background-image: url(../images/cover-image-dark.png);
   background-position: center;
@@ -12,8 +12,7 @@
 .header {
   position: relative;
   display: grid;
-  max-width: 1024px;
-  min-height: 768px;
+  height: 100vh;
 }
 
 .header__theme-menu {
@@ -151,6 +150,7 @@
   margin-inline-end: 20px;
   margin-block-start: 60px;
   margin-block-end: 60px;
+  width: 100%;
 }
 
 .image-block {
@@ -168,8 +168,8 @@
 }
 
 .container--2 {
-  grid-template-columns: minmax(300px, 315px) minmax(300px, 315px) minmax(
-      300px,
+  grid-template-columns: minmax(auto, 315px) minmax(auto, 315px) minmax(
+      auto,
       315px
     );
   gap: 20px;
@@ -177,14 +177,11 @@
 
 .container--img {
   margin-block-start: 9px;
-  grid-template-columns: minmax(230px, 315px) minmax(230px, 315px) minmax(
-      230px,
+  grid-template-columns: minmax(auto, 315px) minmax(auto, 315px) minmax(
+      auto,
       315px
     );
-  grid-template-rows: minmax(250px, 260px) minmax(230px, 315px) minmax(
-      230px,
-      428px
-    );
+  grid-template-rows: auto auto auto;
   gap: 20px;
 }
 
@@ -197,6 +194,10 @@
 .card-vert-title {
   grid-row-start: 1;
   grid-row-end: 7;
+}
+
+.card-vert-block {
+  grid-row-start: span 1;
 }
 
 .title {
@@ -276,8 +277,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1024px;
-  height: 768px;
+  height: 100vh;
 }
 
 .footer__title {
