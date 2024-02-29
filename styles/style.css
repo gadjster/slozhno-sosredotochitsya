@@ -25,9 +25,9 @@
   color: var(--h1font-colore, #db00ff);
   font-family: var(--mainfont, sans-serif);
   font-weight: 700;
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   font-style: normal;
   line-height: 82.5%; /* 129.525px */
-  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
 }
 
 .header__theme-menu {
@@ -301,7 +301,6 @@
 .footer {
   position: relative;
   display: flex;
-  justify-content: center;
   justify-content: center;
   align-items: center;
   width: 100%;
