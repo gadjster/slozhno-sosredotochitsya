@@ -4,7 +4,7 @@
   переключая тему
 */
 
-:root .theme-dark {
+:root .theme_dark {
   --accent-color: #ff0070;
   --mainfont-color: #f1b2ce;
   --h1font-colore: #db00ff;

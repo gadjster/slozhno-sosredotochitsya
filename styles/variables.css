@@ -153,12 +153,6 @@
       gap: 0;
     }
 
-    .container--img {
-      grid-template-columns: calc(100vmin - 20px);
-      grid-template-rows: auto auto auto auto auto auto;
-      margin-block-start: 0;
-    }
-
     .card-vert-title {
       grid-row-start: 1;
       grid-row-end: 1;
