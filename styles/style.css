@@ -238,6 +238,10 @@
   background-color: var(--accent-color, #ff0070);
 }
 
+.header__4 {
+  font-weight: 400;
+}
+
 .text__block {
   width: 100%;
   margin-block-start: 10px;
