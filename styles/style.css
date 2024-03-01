@@ -1,9 +1,9 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
+  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   display: grid;
   justify-content: center;
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background-image: url(../images/cover-image-dark.png);
   background-position: center;
   background-size: contain;
