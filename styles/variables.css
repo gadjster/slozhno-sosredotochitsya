@@ -124,7 +124,7 @@
   .card__row-title {
     grid-column-start: 1;
     grid-column-end: 4;
-    max-width: 250px;
+    max-width: 260px;
   }
 
   .section {
@@ -150,10 +150,6 @@
   .container--2 {
     grid-template-columns: 1fr;
     margin-block-start: 30px;
-  }
-
-  .card__row-title {
-    max-width: 260px;
   }
 
   .container--3 {
