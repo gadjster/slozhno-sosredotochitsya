@@ -59,7 +59,7 @@
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
-  line-height: 18px;
+  line-height: 100%;
   text-transform: lowercase;
   background-color: transparent;
 }
@@ -95,7 +95,7 @@
   font-weight: 700;
   font-size: 18px;
   font-style: normal;
-  line-height: 23.4px; /* 130% */
+  line-height: 130%;
 }
 
 .decor__element {
@@ -226,7 +226,7 @@
   font-weight: 700;
   font-size: 18px;
   font-style: normal;
-  line-height: 23.4px; /* 130% */
+  line-height: 130%;
 }
 
 .title__h2 {
@@ -251,7 +251,7 @@
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
-  line-height: 23.4px; /* 130% */
+  line-height: 130%; /* 23.4px */
 }
 
 .mini-block .title {
