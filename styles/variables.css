@@ -14,62 +14,6 @@
 }
 
 @media (max-width: 768px) {
-  .header__theme-menu-list {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .header__theme-menu {
-    justify-self: flex-end;
-    align-self: self-end;
-    margin-inline-end: 20px;
-    margin-block-start: 15px;
-  }
-
-  .header__title {
-    margin-block-start: 77px;
-    margin-block-end: 68px;
-  }
-
-  .header__text-block {
-    max-width: 364px;
-    margin-inline-end: 21px;
-  }
-
-  .section:first-of-type {
-    margin-block-start: 60px;
-  }
-
-  .section {
-    margin-block-start: 51px;
-    margin-block-end: 0;
-  }
-
-  .card__row-title {
-    max-width: 230px;
-    margin-block-end: 18px;
-  }
-
-  .container--2 {
-    grid-template-columns: calc(100vmin - 40px);
-    row-gap: 0;
-    column-gap: 0;
-    margin-block-start: 10px;
-    margin-block-end: 0;
-  }
-
-  .container--3 {
-    grid-template-columns: minmax(calc(100vmin / 3 - 28px), 315px) minmax(
-        calc(100vmin * 2 / 3 - 30px),
-        650px
-      );
-    column-gap: 18px;
-  }
-
-  .card-vert-block {
-    grid-column-start: 1;
-  }
-
   @media (max-width: 375px) {
     .header__title {
       margin-inline-start: 10px;
@@ -193,5 +137,60 @@
       grid-column-start: 1;
       grid-row-start: span 1;
     }
+  }
+  .header__theme-menu-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header__theme-menu {
+    justify-self: flex-end;
+    align-self: self-end;
+    margin-inline-end: 20px;
+    margin-block-start: 15px;
+  }
+
+  .header__title {
+    margin-block-start: 77px;
+    margin-block-end: 68px;
+  }
+
+  .header__text-block {
+    max-width: 364px;
+    margin-inline-end: 21px;
+  }
+
+  .section:first-of-type {
+    margin-block-start: 60px;
+  }
+
+  .section {
+    margin-block-start: 51px;
+    margin-block-end: 0;
+  }
+
+  .card__row-title {
+    max-width: 230px;
+    margin-block-end: 18px;
+  }
+
+  .container--2 {
+    grid-template-columns: calc(100vmin - 40px);
+    row-gap: 0;
+    column-gap: 0;
+    margin-block-start: 10px;
+    margin-block-end: 0;
+  }
+
+  .container--3 {
+    grid-template-columns: minmax(calc(100vmin / 3 - 28px), 315px) minmax(
+        calc(100vmin * 2 / 3 - 30px),
+        650px
+      );
+    column-gap: 18px;
+  }
+
+  .card-vert-block {
+    grid-column-start: 1;
   }
 }
