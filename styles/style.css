@@ -54,7 +54,7 @@
   height: 26px;
   border: 1px solid transparent;
   outline: none;
-  color: var(--accent-color, #ff0070);
+  color: var(--menu-color, #ff0070);
   font-family: var(--mainfont, sans-serif);
   font-weight: 400;
   font-size: 18px;
@@ -65,15 +65,15 @@
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid var(--accent-color, #ff0070);
+  border: 1px solid var(--menu-color, #ff0070);
 }
 
 .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--accent-color, #ff0070);
+  border-bottom: 1px solid var(--menu-color, #ff0070);
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--accent-color, #ff0070);
+  border: 1px solid var(--menu-color, #ff0070);
 }
 
 .header__title {
@@ -103,7 +103,7 @@
   top: 20px;
   right: 29px;
   display: flex;
-  color: var(--accent-color, #ff0070);
+  color: var(--menu-color, #ff0070);
   font-family: var(--mainfont, sans-serif);
   font-weight: 400;
   font-size: 18px;
@@ -131,8 +131,8 @@
   right: 20px;
   width: 25px;
   height: 25px;
-  border-top: 1px solid var(--accent-color, #ff0070);
-  border-right: 1px solid var(--accent-color, #ff0070);
+  border-top: 1px solid var(--menu-color, #ff0070);
+  border-right: 1px solid var(--menu-color, #ff0070);
 }
 
 .decorated-zone::before {
@@ -144,8 +144,8 @@
   height: 25px;
   margin-top: 0;
   margin-left: 0;
-  border-bottom: 1px solid var(--accent-color, #ff0070);
-  border-left: 1px solid var(--accent-color, #ff0070);
+  border-bottom: 1px solid var(--menu-color, #ff0070);
+  border-left: 1px solid var(--menu-color, #ff0070);
 }
 
 .section {
@@ -229,6 +229,15 @@
   line-height: 23.4px; /* 130% */
 }
 
+.title__h2 {
+  color: var(--h2font-colore, #ff0070);
+}
+
+.title__h-decor {
+  color: var(--h2h3font-colore-decor, #000028);
+  background-color: var(--accent-color, #ff0070);
+}
+
 .text__block {
   width: 100%;
   margin-block-start: 10px;
@@ -239,11 +248,6 @@
   font-size: 18px;
   font-style: normal;
   line-height: 23.4px; /* 130% */
-}
-
-.title-decor {
-  color: var(--h3font-color, #000028);
-  background-color: var(--accent-color, #ff0070);
 }
 
 .mini-block .title {

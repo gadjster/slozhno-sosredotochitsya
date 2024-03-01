@@ -5,22 +5,38 @@
 */
 
 :root .theme_dark {
+  /* цвет меню */
+  --menu-color: #ff0070;
+  /* цвет шрифта для акцентных элементов */
   --accent-color: #ff0070;
-  --mainfont-color: #f1b2ce;
+  /* цвет шрифта для заголовков 1 уровня */
   --h1font-colore: #db00ff;
-  --h3font-color: #000028;
+  /* цвет шрифта для заголовков 2 уровня */
+  --h2font-colore: #ff0070;
+  /* цвет шрифта для заголовков 2 уровня с декором*/
+  --h2h3font-colore-decor: #000028;
+  /* цвет шрифта для заголовков 2 и 3 уровня */
+  --mainfont-color: #f1b2ce;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
+    /* цвет шрифта для акцентных элементов */
     --accent-color: #ff0070;
-    --mainfont-color: #f1b2ce;
+    /* цвет шрифта для заголовков 1 уровня */
     --h1font-colore: #db00ff;
-    --h3font-color: #000028;
+    /* цвет шрифта для заголовков 2 уровня */
+    --h2font-colore: #ff0070;
+    /* цвет шрифта для заголовков 2 уровня с декором*/
+    --h2h3font-colore-decor: #000028;
+    /* цвет шрифта для заголовков 2 и 3 уровня */
+    --mainfont-color: #f1b2ce;
   }
+
   .page {
     background-image: url(../images/cover-image-dark.png);
   }
+
   .decor__element {
     display: flex;
   }
