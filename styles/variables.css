@@ -4,6 +4,18 @@
 */
 :root {
   --mainfont: "IBM Plex mono";
+  /* цвет меню */
+  --menu-color: #ff0070;
+  /* цвет шрифта для акцентных элементов */
+  --accent-color: #ff0070;
+  /* цвет шрифта для заголовков 1 уровня */
+  --title_big-color: #db00ff;
+  /* цвет шрифта для заголовков 2 уровня */
+  --subtitle-colore: #ff0070;
+  /* цвет шрифта для заголовков 2 уровня с декором*/
+  --subtitle-color-decor: #000028;
+  /* цвет шрифта для заголовков 2 и 3 уровня */
+  --mainfont-color: #f1b2ce;
 }
 
 @media screen and (min-width: 375px) and (max-width: 768px) {
@@ -143,16 +155,16 @@
     margin-block-end: 0px;
   }
 
-  .container--1 {
+  .container--why {
     grid-template-columns: 1fr;
   }
 
-  .container--2 {
+  .container--what {
     grid-template-columns: 1fr;
     margin-block-start: 30px;
   }
 
-  .container--3 {
+  .container--how {
     grid-template-columns: 1fr;
     gap: 0;
     margin-block-start: 1px;

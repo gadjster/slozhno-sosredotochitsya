@@ -22,7 +22,7 @@
 }
 
 .main-title {
-  color: var(--h1font-colore, #db00ff);
+  color: var(--title_big-color, #db00ff);
   font-family: var(--mainfont, sans-serif);
   font-weight: 700;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
@@ -84,21 +84,19 @@
   text-shadow: 4px 4px 0px var(--accent-color, #ff0070);
 }
 
-.header__text-block {
-  justify-self: flex-end;
-  max-width: 491px;
-  margin-inline-end: 20px;
-}
-
 .header__text {
   font-family: var(--mainfont, sans-serif);
   font-weight: 700;
   font-size: 18px;
   font-style: normal;
   line-height: 130%;
+  justify-self: flex-end;
+  max-width: 491px;
+  margin-inline-end: 20px;
 }
 
 .decor__element {
+  display: flex;
   position: absolute;
   top: 20px;
   right: 29px;
@@ -113,7 +111,7 @@
   text-transform: uppercase;
 }
 
-.decor__element::after {
+.decor__element-bullet {
   content: "";
   width: 9px;
   height: 9px;
@@ -169,7 +167,7 @@
   justify-content: center;
 }
 
-.container--1 {
+.container--why {
   grid-template-columns: minmax(calc(100vmin / 3 - 20px), 315px) minmax(
       calc(100vmin * 2 / 3 - 40px),
       650px
@@ -178,7 +176,7 @@
   column-gap: 20px;
 }
 
-.container--2 {
+.container--what {
   grid-template-columns:
     minmax(calc(100vmin / 3 - 80px / 3), 315px)
     minmax(calc(100vmin / 3 - 80px / 3), 315px)
@@ -186,7 +184,7 @@
   column-gap: 20px;
 }
 
-.container--3 {
+.container--how {
   grid-template-columns: minmax(calc(100vmin / 3 - 30px), 315px) minmax(
       calc(100vmin * 2 / 3 - 30px),
       650px
@@ -230,11 +228,11 @@
 }
 
 .title__h2 {
-  color: var(--h2font-colore, #ff0070);
+  color: var(--subtitle-colore, #ff0070);
 }
 
 .title__h-decor {
-  color: var(--h2h3font-colore-decor, #000028);
+  color: var(--subtitle-color-decor, #000028);
   background-color: var(--accent-color, #ff0070);
 }
 
