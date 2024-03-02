@@ -85,21 +85,21 @@
 }
 
 .header__text {
+  justify-self: flex-end;
+  max-width: 491px;
+  margin-inline-end: 20px;
   font-family: var(--mainfont, sans-serif);
   font-weight: 700;
   font-size: 18px;
   font-style: normal;
   line-height: 130%;
-  justify-self: flex-end;
-  max-width: 491px;
-  margin-inline-end: 20px;
 }
 
 .decor__element {
-  display: flex;
   position: absolute;
   top: 20px;
   right: 29px;
+  display: flex;
   display: flex;
   color: var(--menu-color, #ff0070);
   font-family: var(--mainfont, sans-serif);

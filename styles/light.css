@@ -51,8 +51,8 @@
   */
 
   background-image: url(../images/cover-image-light.png);
+}
 
-  .decor__element {
-    display: none;
-  }
+.page.theme_light.decor__element {
+  display: none;
 }
