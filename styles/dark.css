@@ -22,8 +22,6 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-  }
 }
 
 .page.theme_dark {
