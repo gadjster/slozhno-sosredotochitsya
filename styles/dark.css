@@ -21,9 +21,6 @@
   --mainfont-color: #f1b2ce;
 }
 
-@media (prefers-color-scheme: dark) {
-}
-
 .page.theme_dark {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -32,6 +29,6 @@
   background-image: url(../images/cover-image-dark.png);
 }
 
-.page.theme_dark.decor__element {
+.theme_dark .decor__element {
   display: flex;
 }
