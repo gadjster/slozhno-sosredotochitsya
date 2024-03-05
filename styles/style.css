@@ -135,7 +135,7 @@
   text-transform: uppercase;
 }
 
-.decor__element-bullet {
+.decor__element::after {
   content: "";
   width: 9px;
   height: 9px;
