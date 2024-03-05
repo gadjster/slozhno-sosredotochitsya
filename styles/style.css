@@ -21,6 +21,7 @@
   width: 100%;
   height: 100vh;
   min-height: 668px;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
 .decorated-zone:after {
@@ -104,9 +105,6 @@
   justify-self: flex-start;
   align-self: center;
   text-shadow: 4px 4px 0px var(--accent-color, #ff0070);
-  height: 1em;
-  margin-block-start: 76px;
-  margin-block-end: 19px;
 }
 
 .header__text {
@@ -119,6 +117,7 @@
   font-style: normal;
   line-height: 130%;
   margin-inline-end: 20px;
+  margin-block-start: 51px;
 }
 
 .decor__element {
@@ -379,16 +378,23 @@
 @media screen and (min-width: 376px) and (max-width: 768px) {
   .header__theme-menu {
     justify-self: flex-end;
-    align-self: center;
-    margin-inline-end: 27px;
+    align-self: flex-end;
+    margin-inline-end: 20px;
+    padding-block-start: 0;
+    margin-block-start: -11px;
   }
   .header__theme-menu-list {
     flex-direction: column;
   }
 
   .header__text {
-    margin-inline-end: 19px;
+    margin-inline-end: 20px;
     max-width: 364px;
+  }
+
+  .header__title {
+    margin-block-start: 106px;
+    margin-block-end: 48px;
   }
   .container--what {
     grid-template-columns: 1fr;
