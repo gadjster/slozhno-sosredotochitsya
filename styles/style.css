@@ -53,7 +53,7 @@
   color: var(--title_big-color, #db00ff);
   font-family: var(--mainfont, sans-serif);
   font-weight: 700;
-  font-size: var(--mainfont-size-desk, 157px);
+  font-size: var(--mainfont-size, 157px);
   font-style: normal;
   line-height: 82.5%; /* 129.525px */
 }
@@ -453,6 +453,10 @@
 }
 
 @media (max-width: 375px) {
+  :root {
+    --mainfont-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  }
+
   .header {
     grid-template-rows: 2fr 1fr 2fr;
   }
@@ -472,7 +476,7 @@
   }
 
   .main-title {
-    font-size: var(--mainfont-size-mob, 116px);
+    font-size: var(--mainfont-size, 116px);
   }
 
   .header__title {

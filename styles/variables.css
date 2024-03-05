@@ -4,7 +4,7 @@
 */
 :root {
   /* альтернативный щрифт - в дальнейшем его переопределяем */
-  --mainfont: sans-serif;
+  --mainfont: "IBM Plex mono", monospace;
   /* цвет меню */
   --menu-color: #ff0070;
   /* цвет меню для состояния hover */
@@ -20,7 +20,5 @@
   /* цвет шрифта для заголовков 2 и 3 уровня */
   --mainfont-color: #f1b2ce;
   /* размер шрифта заголовка для планшета или декстопа */
-  --mainfont-size-desk: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  /* размер шрифта заголовка для мобильных */
-  --mainfont-size-mob: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --mainfont-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
 }
