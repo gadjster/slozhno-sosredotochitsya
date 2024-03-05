@@ -73,7 +73,7 @@
 
 .header__theme-menu-button {
   width: 100%;
-  border: 1px solid transparent;
+  border: none;
   outline: none;
   color: var(--menu-color, #ff0070);
   font-family: var(--mainfont, sans-serif);
@@ -87,7 +87,7 @@
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid var(--menu-color-RGB-transperent, rgba(255, 0, 112, 0.4));
+  outline: 1px solid var(--menu-color-RGB-transperent, rgba(255, 0, 112, 0.4));
 }
 
 .header__theme-menu-button:focus-visible {
@@ -95,7 +95,7 @@
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--menu-color, #ff0070);
+  outline: 1px solid var(--menu-color, #ff0070);
 }
 
 .header__title {
