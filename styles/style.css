@@ -212,8 +212,8 @@ https://yadi.sk/i/9dw12kO2YxbI0Q отступ не по макету */
 
 .container--what {
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 20px;
   grid-auto-flow: column;
+  column-gap: 20px;
 }
 
 .container--what-title {
@@ -223,8 +223,8 @@ https://yadi.sk/i/9dw12kO2YxbI0Q отступ не по макету */
 }
 
 .container--what-block {
-  grid-row-start: 2;
   grid-template-rows: min-content min-content;
+  grid-row-start: 2;
 }
 
 .container--how {
@@ -327,8 +327,8 @@ grid-row: 1/-1 */
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 667px;
   height: calc(100vh - 2 * var(--indentation, 20px));
+  min-height: 667px;
   min-height: calc(668px - 2 * var(--indentation, 20px));
   margin-block-start: var(--indentation, 20px);
   margin-block-end: var(--indentation, 20px);
