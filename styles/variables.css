@@ -6,7 +6,7 @@
   /* отступ от краев */
   --indentation: 20px;
   /* альтернативный щрифт - в дальнейшем его переопределяем */
-  --mainfont: "IBM Plex mono", monospace;
+  --mainfont: "IBM Plex mono", sans-serif;
   /* цвет меню */
   --menu-color: #ff0070;
   /* цвет меню для состояния hover */
