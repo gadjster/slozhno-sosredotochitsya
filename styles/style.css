@@ -13,17 +13,19 @@
 .header {
   position: relative;
   display: grid;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: 1fr min-content 1fr;
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 2 * var(--indentation, 20px));
   min-height: 668px;
+  margin-block-start: var(--indentation, 20px);
+  margin-block-end: var(--indentation, 20px);
 }
 
 .decorated-zone:after {
   content: "";
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 0px;
+  right: var(--indentation, 20px);
   width: 25px;
   height: 25px;
   border-top: 1px solid var(--menu-color, #ff0070);
@@ -33,12 +35,10 @@
 .decorated-zone::before {
   content: "";
   position: absolute;
-  bottom: 20px;
-  left: 20px;
+  bottom: 0px;
+  left: var(--indentation, 20px);
   width: 25px;
   height: 25px;
-  margin-top: 0;
-  margin-left: 0;
   border-bottom: 1px solid var(--menu-color, #ff0070);
   border-left: 1px solid var(--menu-color, #ff0070);
 }
@@ -56,7 +56,6 @@
   display: flex;
   justify-self: center;
   align-self: start;
-  /* padding-block-start: 20px; */
 }
 
 .header__theme-menu-list {
@@ -103,10 +102,9 @@
 
 .header__text {
   justify-self: flex-end;
-  align-self: flex-start;
+  align-self: center;
   max-width: 491px;
-  /* margin-inline-end: 20px;
-  margin-block-start: 51px; */
+  margin-inline-end: var(--indentation, 20px);
   font-family: var(--mainfont, sans-serif);
   font-weight: 700;
   font-size: 18px;
@@ -115,7 +113,7 @@
 
 .decor__element {
   position: absolute;
-  top: 20px;
+  top: 0px;
   right: 29px;
   display: flex;
   color: var(--menu-color, #ff0070);
@@ -177,8 +175,8 @@
 .container {
   display: grid;
   justify-content: center;
-  margin-inline-start: 20px;
-  margin-inline-end: 20px;
+  margin-inline-start: var(--indentation, 20px);
+  margin-inline-end: var(--indentation, 20px);
   margin-block-start: 60px;
   margin-block-end: 80px;
 }
