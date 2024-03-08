@@ -144,9 +144,6 @@
   line-height: 130%;
 }
 
-/* Надо исправить https://yadi.sk/d/i1gOgr9ONOJLgw 
-цвет в светлой теме не по макету */
-
 .title-light {
   font-weight: 400;
 }
@@ -184,9 +181,6 @@
 .container:last-of-type {
   margin-block-end: 60px;
 }
-
-/* Надо исправить https://yadi.sk/d/ufoOlb2zKBBZtA, 
-https://yadi.sk/i/9dw12kO2YxbI0Q отступ не по макету */
 
 .container--why {
   grid-template-columns: 1fr 2fr;
