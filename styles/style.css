@@ -156,10 +156,6 @@
   background-color: var(--accent-color, #ff0070);
 }
 
-.main {
-  width: 100%;
-}
-
 .section {
   display: flex;
   flex-direction: column;
@@ -177,8 +173,16 @@
   justify-content: center;
   margin-inline-start: var(--indentation, 20px);
   margin-inline-end: var(--indentation, 20px);
-  margin-block-start: 60px;
+  margin-block-start: 80px;
   margin-block-end: 80px;
+}
+
+.container:first-of-type {
+  margin-block-start: 60px;
+}
+
+.container:last-of-type {
+  margin-block-end: 60px;
 }
 
 /* Надо исправить https://yadi.sk/d/ufoOlb2zKBBZtA, 
@@ -186,7 +190,7 @@ https://yadi.sk/i/9dw12kO2YxbI0Q отступ не по макету */
 
 .container--why {
   grid-template-columns: 1fr 2fr;
-  column-gap: 20px;
+  column-gap: 10px;
 }
 
 .container--why-title {
@@ -198,6 +202,14 @@ https://yadi.sk/i/9dw12kO2YxbI0Q отступ не по макету */
   grid-row-start: span 1;
 }
 
+.container-block {
+  padding-block-end: 20px;
+}
+
+.container-block:last-of-type {
+  padding-block-end: 0;
+}
+
 .container--what {
   grid-template-columns: repeat(3, 1fr);
   column-gap: 20px;
@@ -206,19 +218,30 @@ https://yadi.sk/i/9dw12kO2YxbI0Q отступ не по макету */
 
 .container--what-title {
   grid-column: 1/-1;
+  max-width: 300px;
+  padding-block-end: 20px;
 }
 
 .container--what-block {
   grid-row-start: 2;
+  grid-template-rows: min-content min-content;
 }
 
 .container--how {
   grid-template-columns: 1fr 2fr;
-  column-gap: 20px;
+  column-gap: 10px;
 }
 
 .container--how-title {
-  grid-row: 1/-1;
+  grid-row: 1/10;
+}
+
+/* почему-то у меня в Chrome 
+свежем в этом месте не работает 
+grid-row: 1/-1 */
+
+.title-magrine {
+  margin-block-end: 20px;
 }
 
 .container--how-block {
@@ -304,8 +327,11 @@ https://yadi.sk/i/9dw12kO2YxbI0Q отступ не по макету */
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
   min-height: 667px;
+  height: calc(100vh - 2 * var(--indentation, 20px));
+  min-height: 668px;
+  margin-block-start: var(--indentation, 20px);
+  margin-block-end: var(--indentation, 20px);
 }
 
 .footer__title {
@@ -317,8 +343,7 @@ https://yadi.sk/i/9dw12kO2YxbI0Q отступ не по макету */
   .header__theme-menu {
     justify-self: flex-end;
     align-self: center;
-    /* margin-inline-end: 20px;
-    padding-block-start: 141px; */
+    padding-inline-end: var(--indentation, 20px);
   }
   .header__theme-menu-list {
     flex-direction: column;
@@ -326,8 +351,6 @@ https://yadi.sk/i/9dw12kO2YxbI0Q отступ не по макету */
 
   .header__text {
     max-width: 364px;
-    /* margin-inline-end: 20px;
-    margin-block-start: 41px; */
   }
 
   .container--what {
@@ -341,6 +364,11 @@ https://yadi.sk/i/9dw12kO2YxbI0Q отступ не по макету */
     max-width: 230px;
   }
 
+  .container--what-block {
+    grid-column-start: 1;
+    grid-row-start: span 1;
+  }
+
   .container--how {
     grid-template-columns: 1fr 2fr;
     column-gap: 20px;
@@ -350,39 +378,24 @@ https://yadi.sk/i/9dw12kO2YxbI0Q отступ не по макету */
 @media (max-width: 375px) {
   :root {
     --mainfont-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    --indentation: 10px;
+  }
+
+  .page {
+    background-image: unset;
   }
 
   .header {
-    grid-template-rows: 2fr 1fr 2fr;
-  }
-
-  .decor__element {
-    top: 10px;
-    right: 19px;
-  }
-
-  .decorated-zone:after {
-    top: 10px;
-    right: 10px;
-  }
-  .decorated-zone:before {
-    bottom: 10px;
-    left: 10px;
+    grid-template-rows: 1fr 1fr 1fr;
   }
 
   .main-title {
     font-size: var(--mainfont-size, 116px);
   }
 
-  .header__title {
-    padding-inline-start: 10px;
-  }
-
   .header__theme-menu {
     justify-self: flex-end;
     align-self: center;
-    margin-inline-end: 10px;
-    padding-block-start: 5px;
   }
   .header__theme-menu-list {
     flex-direction: column;
@@ -392,19 +405,13 @@ https://yadi.sk/i/9dw12kO2YxbI0Q отступ не по макету */
     justify-self: center;
     align-self: center;
     max-width: 355px;
-    margin-inline-end: 0;
-    margin-block-start: -10px;
   }
 
   .container {
-    margin-inline-start: 10px;
-    margin-inline-end: 10px;
+    margin-inline-start: var(--indentation, 10px);
+    margin-inline-end: var(--indentation, 10px);
     margin-block-start: 50px;
     margin-block-end: 50px;
-  }
-
-  .container:first-of-type {
-    margin-block-start: 40px;
   }
 
   .container--what {
