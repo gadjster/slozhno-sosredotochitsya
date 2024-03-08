@@ -7,34 +7,47 @@
 :root .theme_light {
   /* цвет меню */
   --menu-color: #353430;
+
   /* цвет меню для состояния hover */
-  --menu-color-RGB-transperent: rgba(50, 49, 45, 0.4);
+  --menu-color-RGB-transperent: rgb(50 49 45 / 0.4);
+
   /* цвет шрифта для акцентных элементов */
   --accent-color: #ff8dcb;
+
   /* цвет шрифта для заголовков 1 уровня */
   --title_big-color: #ffc2e6;
+
   /* цвет шрифта для заголовков 2 уровня */
   --subtitle-colore: #353430;
-  /* цвет шрифта для заголовков 2 и 3 уровня с декором*/
+
+  /* цвет шрифта для заголовков 2 и 3 уровня с декором */
   --subtitle-color-decor: #353430;
+
   /* цвет шрифта для параграфов */
   --mainfont-color: #353430;
 }
 
 @media (prefers-color-scheme: light) {
+
   :root {
     /* цвет меню */
     --menu-color: #353430;
+
     /* цвет меню для состояния hover */
-    --menu-color-RGB-transperent: rgba(50, 49, 45, 0.4);
+    --menu-color-RGB-transperent: rgb(50 49 45 / 0.4);
+
     /* цвет шрифта для акцентных элементов */
     --accent-color: #ff8dcb;
+
     /* цвет шрифта для заголовков 1 уровня */
     --title_big-color: #ffc2e6;
+
     /* цвет шрифта для заголовков 2 уровня */
     --subtitle-colore: #353430;
-    /* цвет шрифта для заголовков 2 и 3 уровня с декором*/
+
+    /* цвет шрифта для заголовков 2 и 3 уровня с декором */
     --subtitle-color-decor: #353430;
+
     /* цвет шрифта для параграфов */
     --mainfont-color: #353430;
   }
