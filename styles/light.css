@@ -8,6 +8,9 @@
   /* цвет меню */
   --menu-color: #353430;
 
+  /* цвет заголовков */
+  --title-color: #353430;
+
   /* цвет меню для состояния hover */
   --menu-color-RGB-transperent: rgb(50 49 45 / 0.4);
 
@@ -32,6 +35,9 @@
   :root {
     /* цвет меню */
     --menu-color: #353430;
+
+    /* цвет заголовков */
+    --title-color: #353430;
 
     /* цвет меню для состояния hover */
     --menu-color-RGB-transperent: rgb(50 49 45 / 0.4);

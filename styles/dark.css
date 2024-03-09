@@ -8,6 +8,9 @@
   /* цвет меню */
   --menu-color: #ff0070;
 
+  /* цвет заголовков */
+  --title-color: #ff0070;
+
   /* цвет меню для состояния hover */
   --menu-color-RGB-transperent: rgb(255 0 112 / 0.4);
 
